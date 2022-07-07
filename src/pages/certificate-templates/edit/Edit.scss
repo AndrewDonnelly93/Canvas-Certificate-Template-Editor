@@ -1,0 +1,8 @@
+@use '../../../assets/scss/variables' as vars;
+
+.button-action-header {
+  position: relative;
+  padding: 4px;
+  outline: 1px solid vars.$color--light-gray;
+  border-radius: 4px;
+}

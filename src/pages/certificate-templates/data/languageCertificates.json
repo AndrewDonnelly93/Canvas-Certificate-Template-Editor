@@ -1,0 +1,105 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "is_default": true,
+      "groupId": "1",
+      "name": "Default certificate",
+      "language": {
+       "name": "English",
+       "code": "en"
+      },
+      "preview": {
+         "url_small": "/src/assets/images/certificate-templates/default-certificate.png",
+         "url_big": "/src/assets/images/certificate-templates/preview-certificate.png"
+      },
+      "default_image": "/src/assets/images/certificate-templates/preview-certificate.png",
+      "created": "2022-05-22T14:56:29.000Z",
+      "updated": "2022-05-22T14:56:28.000Z"
+    },
+    {
+         "id": "2",
+         "is_default": false,
+         "groupId": "2",
+         "name": "My proficiency certificate",
+         "language": {
+          "name": "English",
+          "code": "en"
+         },
+         "preview": {
+            "url_small": "/src/assets/images/certificate-templates/default-certificate.png",
+            "url_big": "/src/assets/images/certificate-templates/preview-certificate.png"
+         },
+         "default_image": "/src/assets/images/certificate-templates/preview-certificate.png",
+         "fields": {
+          "user_profile": {
+            "first_last_name": {
+              "styles": {
+                "fontSize": "24px",
+                "fontFamily": "Arial",
+                "verticalResize": true,
+                "fontWeight": "400",
+                "opacity": "0.5"
+              }
+            },
+            "city": {
+              "styles": {
+              }
+            },
+            "center": {
+              "styles": {
+              }
+            },
+            "company": {
+              "styles": {
+              }
+            },
+            "department": {
+              "styles": {
+              }
+            },
+            "position": {
+              "styles": {
+              }
+            }
+          }
+         },
+         "created": "2022-05-22T14:56:29.000Z",
+         "updated": "2022-05-22T14:56:28.000Z"
+       },
+    {
+         "id": "3",
+         "is_default": true,
+         "groupId": "2",
+         "name": "Arabic certificate",
+         "language": {
+          "name": "Arabic",
+          "code": "ar"
+         },
+         "preview": {
+            "url_small": "/src/assets/images/certificate-templates/default-certificate.png",
+            "url_big": "/src/assets/images/certificate-templates/preview-certificate.png"
+         },
+         "default_image": "/src/assets/images/certificate-templates/preview-certificate.png",
+         "created": "2022-05-22T14:56:29.000Z",
+         "updated": "2022-05-22T14:56:28.000Z"
+       },
+       {
+                "id": "4",
+                "is_default": true,
+                "groupId": "3",
+                "name": "German certificate",
+                "language": {
+                 "name": "German",
+                 "code": "de"
+                },
+                "preview": {
+                   "url_small": "/src/assets/images/certificate-templates/default-certificate.png",
+                   "url_big": "/src/assets/images/certificate-templates/preview-certificate.png"
+                },
+                "default_image": "/src/assets/images/certificate-templates/preview-certificate.png",
+                "created": "2022-05-22T14:56:29.000Z",
+                "updated": "2022-05-22T14:56:28.000Z"
+              }
+  ]
+}

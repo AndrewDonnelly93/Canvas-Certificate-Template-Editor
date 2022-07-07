@@ -1,0 +1,211 @@
+@use '../../../../../assets/scss/variables' as vars;
+
+.tables {
+  display: flex;
+
+  .ant-dropdown-menu-title-content {
+    font-weight: 700;
+  }
+
+  .kc-table__with-selection {
+    .ant-table {
+
+      th {
+        .ant-table-selection {
+          vertical-align: middle;
+        }
+
+        // Setting the z-index for the checkbox
+        &.ant-table-selection-column {
+          transition: z-index 1ms;
+          background: vars.$color--pale-orange !important;
+          z-index: 101 !important;
+        }
+      }
+
+    }
+  }
+}
+
+.choose-course {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.course-search {
+  width: 553px;
+  padding-right: 20px;
+  border-right: 1px solid vars.$color--light-gray;
+  @at-root html[lang='ar'] & {
+    padding-right: 0;
+    padding-left: 20px;
+    border-right: 0;
+    border-left: 1px solid vars.$color--light-gray;
+  }
+
+  .ant-select-show-search {
+    width: 268px !important;
+  }
+
+  .ant-dropdown-trigger {
+    position: relative;
+    top: 5px;
+    left: -10px;
+  }
+
+  .plus-icon {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.add-courses-window {
+  .ant-table {
+    height: 530px;
+  }
+
+  .buttons-block {
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .modal-window {
+    padding: 0 10px;
+  }
+
+  .ant-select-selector {
+    text-align: left;
+  }
+
+  .kc-button-action__prefix > span > svg > rect {
+    fill: vars.$color--middle-gray;
+  }
+
+  .kc-button-action:hover .kc-button-action__prefix > span > svg rect {
+    fill: currentColor;
+  }
+
+  .selected-table {
+    width: 647px;
+    padding-left: 20px;
+    @at-root html[lang='ar'] & {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    overflow-x: hidden;
+
+    .ant-dropdown-trigger {
+      position: relative;
+      top: 5px;
+      left: -10px;
+    }
+
+    .header {
+      margin-bottom: 67px;
+    }
+  }
+}
+
+.button-action-selected {
+  color: vars.$color--uplifting-green !important;
+}
+
+.add-courses-window {
+  height: 765px;
+  padding: 0;
+
+  .header {
+    color: vars.$color--dark-gray;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    text-align: left;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+}
+
+.kc-button-action__prefix > span.select-icon > svg,
+.kc-button-action__prefix:hover > span.select-icon > svg,
+.kc-button-action__prefix > span.selected-icon > svg,
+.kc-button-action__prefix:hover > span.selected-icon > svg,
+.kc-button-action:hover .kc-button-action__prefix > span.select-icon > svg,
+.kc-button-action:hover .kc-button-action__prefix > span.selected-icon > svg {
+  fill: none !important;
+}
+
+.select-course-table-block,
+.selected-table {
+  position: relative;
+  overflow-x: hidden;
+
+  .notifications__table-empty-text {
+    color: vars.$color--middle-gray;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+    text-align: left;
+    padding-left: 7px;
+  }
+
+  .ant-table-body {
+    overflow-x: hidden;
+    height: 485px;
+  }
+  .ant-select {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    @at-root html[lang='ar'] & {
+      left: unset;
+      right: 0;
+    }
+  }
+
+  .ant-pagination {
+    height: 100%;
+    align-items: center;
+  }
+  .ant-pagination-item-link-icon {
+    height: 24px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .ant-table-selection-column {
+    .ant-checkbox-wrapper {
+      position: relative;
+      left: 4px;
+      @at-root html[lang='ar'] & {
+        right: 4px;
+        left: 0;
+      }
+    }
+  }
+  .ant-table-thead {
+    .ant-table-selection-column {
+      .ant-checkbox-wrapper {
+        left: 0;
+        @at-root html[lang='ar'] & {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.selected-table {
+  .ant-select {
+   left: 20px;
+    @at-root html[lang='ar'] & {
+      right: 20px;
+      left: unset;
+    }
+  }
+}
+
+.buttons-block {
+  justify-content: flex-start;
+}

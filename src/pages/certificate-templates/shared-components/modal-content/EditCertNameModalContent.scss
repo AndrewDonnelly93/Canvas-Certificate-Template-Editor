@@ -1,0 +1,32 @@
+@use '../../../../assets/scss/variables' as vars;
+
+.certificate-name-modal {
+  filter: drop-shadow(0 0 4px rgba(vars.$color--dark-gray, 0.35));
+  border: 1px solid vars.$color--light-gray;
+  border-radius: 4px;
+  &.ant-modal {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    padding-bottom: 0;
+  }
+  input {
+    &.ant-input {
+      width: 100% !important;
+      margin-bottom: 25px;
+    }
+  }
+  button {
+    font-weight: 700;
+    width: 139px;
+  }
+}
+
+.edit-certificate-name {
+  .form-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: vars.$color--dark-gray;
+    margin-bottom: 15px;
+  }
+}

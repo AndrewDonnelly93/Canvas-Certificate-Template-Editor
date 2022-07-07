@@ -1,0 +1,26 @@
+@use '../../../../assets/scss/variables' as vars;
+
+.remove-confirm {
+  &.loading .ant-modal-content {
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  .ant-modal-body {
+    padding: vars.$base-padding * 10;
+    color: vars.$base-text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      width: 8.57em;
+    }
+  }
+
+  &__text {
+    font-size: 18px !important;
+    line-height: 27px !important;
+    text-align: center;
+  }
+}

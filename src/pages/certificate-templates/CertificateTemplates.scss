@@ -1,0 +1,26 @@
+@use '../../assets/scss/variables' as vars;
+
+.certificate-template-list {
+  display: flex;
+  flex-wrap: wrap;
+  > div {
+    margin-right: 20px;
+  }
+}
+
+.ant-page-header-heading {
+  .kc-alert {
+    width: unset;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 16px;
+
+    .ant-space-item {
+      line-height: 16px;
+    }
+  }
+
+  .kc-alert__text {
+    font-weight: 400;
+  }
+}

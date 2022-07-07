@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "event_name": "Password recovery",
+    "event_category": "Users",
+    "applied_template_id": "3",
+    "applied_template_name": "Knowledge City",
+    "event_description": "This is the email sent to the users, it contains the user and password data to recover the user password",
+    "is_active": 1,
+    "languages": ["English", "Arabic", "Spanish"],
+    "created": "2022-03-21T14:56:29.000Z",
+    "updated": "2022-03-22T14:56:28.000Z",
+    "config": {
+      "email_sent_to": ["Users"],
+      "email_sent_from": "info@knowledgecity.com",
+      "email_copy_sent_to": ["r.narvatkin@knowledgecity.com",
+        "v.lityarin@knowledgecity.com"]
+    }
+  },
+  {
+    "id": "2",
+    "event_name": "Contact us",
+    "event_category": "Admins",
+    "applied_template_id": "2",
+    "applied_template_name": "SAMI",
+    "event_description": "This is the email sent to the account admins, it contains the user and password data for the portal admin user",
+    "is_active": 1,
+    "languages": ["English", "German", "Chinese"],
+    "created": "2022-04-22T14:56:29.000Z",
+    "updated": "2022-04-23T14:56:28.000Z",
+    "config": {
+      "email_sent_to": ["AdminAndrey@knowledgecity.com"],
+      "email_sent_from": "info@knowledgecity.com",
+      "email_copy_sent_to": ["a.dygaev@knowledgecity.com",
+        "d.danilchenko@knowledgecity.com"]
+    }
+  },
+  {
+    "id": "3",
+    "event_name": "Event rejected",
+    "event_category": "Webinar",
+    "applied_template_id": "5",
+    "applied_template_name": "Arabic portal",
+    "event_description": "This is the email sent to the webinar users and administrators to say that there was an error",
+    "is_active": 0,
+    "languages": ["Arabic"],
+    "created": "2022-05-22T14:56:29.000Z",
+    "updated": "2022-05-23T14:56:28.000Z",
+    "config": {
+      "email_sent_to": ["Users","AdminAndrey@knowledgecity.com"],
+      "email_sent_from": "info@knowledgecity.com",
+      "email_copy_sent_to": ["a.dygaev@knowledgecity.com",
+        "d.danilchenko@knowledgecity.com"]
+    }
+  },
+  {
+    "id": "4",
+    "event_name": "Reminder",
+    "event_category": "Other",
+    "applied_template_id": "4",
+    "applied_template_name": "Reminder City",
+    "event_description": "This is the email sent to the admins to remind them to update their course",
+    "is_active": 1,
+    "languages": ["English", "Spanish","Arabic"],
+    "created": "2022-06-22T14:56:29.000Z",
+    "updated": "2022-06-23T14:56:28.000Z",
+    "config": {
+      "email_sent_to": ["Admins"],
+      "email_sent_from": "info@knowledgecity.com",
+      "email_copy_sent_to": ["a.dygaev@knowledgecity.com",
+        "d.danilchenko@knowledgecity.com"]
+    }
+  }
+]

@@ -1,0 +1,204 @@
+@use '../../../assets/scss/variables' as vars;
+.dots-tutorial {
+  background: red;
+  width: 10px;
+  height: 10px;
+}
+
+.page-content.apply-to-page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: vars.$color--dark-gray;
+  margin-right: 5px;
+  padding: 0 24px;
+}
+
+.question-circle-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.apply-to {
+  padding: 0 0 24px;
+}
+
+.select-group {
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 25px;
+}
+
+.group-name {
+  color: vars.$color--dark-gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.add-field-button.add-course {
+  padding: 3px 5px;
+}
+
+.priority-selector.ant-select,
+.ant-select-show-search {
+  width: 496px !important;
+  margin-right: 25px;
+}
+
+
+.priority-selector.ant-select {
+  width: 160px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  @at-root html[lang='ar'] & {
+    margin-left: 25px;
+    margin-right: 0;
+  }
+}
+
+.priority-selector.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 30px !important;
+  line-height: 30px !important;
+  .ant-select-selection-item {
+    line-height: 28px !important;
+  }
+}
+
+.ant-select-item-option.select-option {
+  width: 160px !important;
+  padding-left: 50px !important;
+  font-size: 14px;
+  color: vars.$color--dark-gray;
+  position: relative;
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 5px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid vars.$color--light-gray;
+    border-radius: 50%;
+  }
+}
+
+.select-option.ant-select-item-option-selected {
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 10px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: vars.$color--bright-orange;
+  }
+}
+
+.tutorial-tooltip {
+  background: vars.$color--white;
+}
+
+.apply-to .ant-tooltip-arrow-content {
+  background-color: vars.$color--white !important;
+}
+
+.apply-to .ant-tooltip-inner {
+  width: 386px;
+  background: vars.$color--white !important;
+}
+
+
+.content-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  button {
+    min-width: 120px;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.page-content {
+  flex-grow: 1;
+}
+
+.page-content-wrapper {
+  min-height: 90%;
+}
+
+.apply-to .kc-alert {
+  width: fit-content;
+  margin: 0 24px 25px;
+}
+
+.tutorial-button {
+  margin-left: 5px;
+}
+
+.certificate-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.course-type-selector.ant-radio-group {
+  margin-top: 5px;
+}
+
+.modal-window {
+  padding: 10px;
+}
+
+.tutorial-modal {
+  .ant-modal-body {
+    padding: 0;
+  }
+}
+
+.buttons-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    min-width: 120px;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .kc-alert-square {
+    margin-right: 20px;
+  }
+  @at-root html[lang='ar'] & {
+    .kc-alert-square {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+    button {
+      margin-right: 0;
+      margin-left: 15px;
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.modal-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+

@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "is_default": true,
+      "name": "Default certificate",
+      "priority_level": {
+        "id": "0",
+        "level": 0,
+        "title": "All courses"
+      },
+      "languages_amount": 1,
+      "languages": ["English"],
+      "preview": {
+         "url_small": "/src/assets/images/certificate-templates/default-certificate.png",
+         "url_big": "/src/assets/images/certificate-templates/preview-certificate.png"
+      },
+      "canvasToJson": {},
+      "created": "2022-05-22T14:56:29.000Z",
+      "updated": "2022-05-22T14:56:28.000Z"
+    },
+    {
+      "id": "180ae805-80c5-3cba-10ec-026efd760c46",
+      "is_default": false,
+      "name": "Course certificate",
+      "canvasToJson": {},
+      "priority_level": {
+        "id": "1",
+        "level": 1,
+        "title": "Specific course type"
+      },
+      "languages_amount": 3,
+      "languages": ["English", "Arabic", "Spanish"],
+      "preview": {
+        "url_small": "/src/assets/images/certificate-templates/default-certificate.png",
+        "url_big": "/src/assets/images/certificate-templates/preview-certificate.png"
+      },
+      "created": "2022-05-22T14:56:29.000Z",
+      "updated": "2022-05-22T14:56:28.000Z"
+    },
+    {
+      "id": "3",
+      "is_default": false,
+      "name": "Proficiency certificate",
+      "canvasToJson": {},
+      "languages_amount": 3,
+      "languages": ["English", "Arabic", "Spanish"],
+      "preview": {
+         "url_small": "/src/assets/images/certificate-templates/default-certificate.png",
+         "url_big": "/src/assets/images/certificate-templates/preview-certificate.png"
+      },
+      "created": "2022-05-22T14:56:29.000Z",
+      "updated": "2022-05-22T14:56:28.000Z"
+    }
+  ]
+}

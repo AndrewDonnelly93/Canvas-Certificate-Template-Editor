@@ -1,0 +1,340 @@
+@use '../../../assets/scss/variables' as vars;
+
+.certificate-card {
+  position: relative;
+  width: 255px;
+  height: 318px;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 12px;
+  margin-bottom: 20px;
+
+  &_add-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: vars.$color--middle-gray;
+    border: 1px dashed vars.$color--light-gray;
+    &:hover {
+      cursor: pointer;
+      border-color: vars.$color--bright-orange;
+    }
+    .add-icon {
+      margin-bottom: 10px;
+    }
+  }
+
+  .kc-hint {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+  }
+
+  .tooltip {
+    //position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+   // background: vars.$color--dull-orange;
+    background:  vars.$color--white;
+    border-radius: 50%;
+    //top: -4px;
+    //left: -4px;
+    svg {
+      fill: vars.$color--dull-orange;
+      path {
+        fill: vars.$color--dull-orange;
+      }
+     // fill: vars.$color--white;
+    }
+    &_exclamation {
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      background: vars.$color--bright-red;
+      svg {
+        path {
+          fill: vars.$color--white;
+        }
+      }
+    }
+  }
+
+  .cert-languages {
+    .kc-hint {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-left: 2px;
+      .tooltip {
+        svg {
+          path {
+            fill: vars.$color--light-gray;
+          }
+        }
+      }
+    }
+  }
+
+  &_default-certificate {
+    .certificate-name {
+      font-weight: 700;
+    }
+
+    .information-block {
+      margin-bottom: 10px;
+    }
+  }
+
+  &_standard-card {
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 4px rgba(44, 62, 70, 0.35);
+    background: vars.$color--white;
+  }
+
+  &_short-card {
+    height: 269px;
+    .preview {
+      align-self: flex-end;
+    }
+  }
+}
+
+.language-tooltip .ant-tooltip-arrow-content {
+  background-color: vars.$color--white !important;
+  &:before {
+    background: vars.$color--white !important;
+  }
+}
+
+.language-tooltip .ant-tooltip-inner {
+  padding: 15px;
+  color: vars.$color--dark-gray;
+  background-color: vars.$color--white !important;
+  .name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .language-option {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+.languages-tooltip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: vars.$color--light-gray;
+  border-radius: 50%;
+  margin-left: 2px;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: vars.$color--white;
+  }
+}
+
+.certificate-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: vars.$color--dark-gray;
+  margin-bottom: 5px;
+  height: 30px;
+  .name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 80%;
+  }
+  input {
+    margin-right: 5px;
+  }
+}
+
+.information-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-name {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: vars.$color--middle-gray;
+  margin-bottom: 5px;
+}
+
+.category-value {
+  font-size: 14px;
+  color: vars.$color--dark-gray;
+}
+
+.description {
+  font-size: 14px;
+  color: vars.$color--middle-gray;
+}
+
+.edit-certificate {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.certificate-image {
+  width: 231px;
+  height: 146px;
+}
+
+.edit-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(vars.$color--black, 0.5);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  &.active {
+    display: flex;
+  }
+}
+
+.add-icon {
+  width: 24px;
+  height: 24px;
+  svg {
+    fill: vars.$color--middle-gray;
+  }
+}
+
+.button-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  .button-action {
+    display: flex;
+    align-items: center;
+    &:focus:not(:active) {
+      padding: 0;
+      outline: none !important;
+    }
+  }
+  .button-action-icon svg {
+    fill: vars.$color--dark-gray;
+  }
+  .button-action-text {
+    color: vars.$color--dark-gray;
+  }
+}
+
+.preview-certificate-modal {
+  .ant-modal-body {
+    padding: 0;
+  }
+  .ant-modal-close {
+    top: -56px;
+    right: -56px;
+
+    svg {
+      fill: vars.$color--white;
+    }
+  }
+}
+
+.preview-certificate-block,
+.preview-certificate-image {
+  width: 948px;
+  height: 621px;
+}
+
+.preview-certificate {
+  position: relative;
+  .close-icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 16px;
+    cursor: pointer;
+    svg {
+      fill: vars.$color--white;
+    }
+  }
+}
+
+.template-editor-modal {
+  .ant-modal-mask {
+    background-color: unset;
+  }
+  &.ant-modal {
+    padding-bottom: 0;
+    max-width: 100%;
+    bottom: 0;
+    height: 100%;
+  }
+  .ant-modal-content {
+    height: 100%;
+  }
+  .ant-modal-body {
+    padding: 0;
+    height: 100%;
+  }
+}
+
+.card-submenu {
+  height: 30px;
+  width: 20px;
+  margin-right: 10px;
+  transform: rotate(270deg);
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submenu-tooltip.ant-tooltip .ant-tooltip-arrow-content,
+.submenu-tooltip.ant-tooltip .ant-tooltip-inner {
+    background: vars.$color--white !important;
+}
+
+.no-search-results {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .no-results-header {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: vars.$color--dark-gray;
+    margin-bottom: 10px;
+  }
+  .no-results-description {
+    font-size: 14px;
+    color: vars.$color--middle-gray;
+  }
+}
+
+.submenu-dropdown.ant-dropdown {
+  border-radius: 4px;
+}
+
+.template-editor-container {
+  top: 48px !important;
+}
